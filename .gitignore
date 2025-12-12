@@ -1,107 +1,34 @@
-# Dependencies
-**/node_modules
-.pnpm-store/
+# Dependências
+/node_modules
+/pnpm-lock.yaml # Use apenas se você quiser ignorar o lockfile gerado localmente, mas geralmente é recomendado enviar.
 
-# Build outputs
-dist/
-build/
-*.dist
-
-# Environment variables
-.env
-.env.local
-.env.development.local
-.env.test.local
-.env.production.local
-
-# IDE and editor files
-.vscode/
-.idea/
-*.swp
-*.swo
-*~
-
-# OS generated files
-.DS_Store
-.DS_Store?
-._*
-.Spotlight-V100
-.Trashes
-ehthumbs.db
-Thumbs.db
-
-# Logs
-logs
+# Compilação e Build
+/dist
+/build
+/out
+.vitepress/cache
+# Arquivos de log
 *.log
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 pnpm-debug.log*
-lerna-debug.log*
 
-# Runtime data
-pids
-*.pid
-*.seed
-*.pid.lock
-*.bak
+# Variáveis de ambiente e segredos
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+.DS_Store
 
-# Coverage directory used by tools like istanbul
-coverage/
-*.lcov
+# Diretórios e Arquivos do Editor/IDE (Opcional, mas recomendado)
+.idea
+.vscode/*
+!.vscode/settings.json # Manter settings do VS Code
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
 
-# nyc test coverage
-.nyc_output
-
-# Dependency directories
-jspm_packages/
-
-# TypeScript cache
-*.tsbuildinfo
-
-# Optional npm cache directory
-.npm
-
-# Optional eslint cache
-.eslintcache
-
-# Microbundle cache
-.rpt2_cache/
-.rts2_cache_cjs/
-.rts2_cache_es/
-.rts2_cache_umd/
-
-# Optional REPL history
-.node_repl_history
-
-# Output of 'npm pack'
-*.tgz
-
-# Yarn Integrity file
-.yarn-integrity
-
-# parcel-bundler cache (https://parceljs.org/)
-.cache
-.parcel-cache
-
-# Next.js build output
-.next
-
-# Nuxt.js build / generate output
-.nuxt
-
-# Gatsby files
-.cache/
-
-# Storybook build outputs
-.out
-.storybook-out
-
-# Temporary folders
-tmp/
-temp/
-
-# Database
-*.db
-*.sqlite
-*.sqlite3
+# Backups temporários
+*.ts.bak
